@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Order Details | BuyBackScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="brand-nav-color">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo" class="img-fluid desktop-logo">
+                </a>
+                <div class="right-section" id="right-header-sm">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cart" href="#">
+                                <!-- <i class="fas fa-shopping-cart"></i> -->
+                                <img src="images/cart.png" alt="cart" class="img-fluid">
+                                <div class="cart-item-number">
+                                    <p>10</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end mobile-bg" tabindex="-1" id="offcanvasNavbar"
+                    >
+                    <div class="offcanvas-header">
+
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sell
+                                    <i class="fas fa-chevron-down" id="downarrow"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Instant Quote</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Why us?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">How it works?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Track Order</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="offcanvasNavbarDropdown2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    MORE
+                                    <i class="fas fa-chevron-down" id="downarrow1"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="right-section" id="right-header-lg">
+                            <ul class="nav d-flex justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cart" href="#">
+                                        <!-- <i class="fas fa-shopping-basket"></i> -->
+                                        <img src="images/cart.png" alt="cart" class="img-fluid">
+                                        <div class="cart-item-number">
+                                            <p>10</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dashboard-account">
+        <div class="container">
+            <div class="block">
+                <div class="row">
+                    <div class="col-md-5 col-lg-4 col-xl-3 padding-right-left-15">
+                        <div class="left-sidebar clearfix">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="dashboard-orderpage.html" class="active text-decoration-none">
+                                        <span>
+                                            <img src="images/dashboard/icons/orders.png" alt="order-image"
+                                                class="img-fluid">
+                                        </span>
+                                        orders
+                                        <span class="order-count">(5)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-coupons.html" class="text-decoration-none">
+                                        <span>
+                                            <img src="images/dashboard/icons/coupon.png" alt="coupon-image"
+                                                class="img-fluid">
+                                        </span>
+                                        Coupons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-settings.html" class="text-decoration-none">
+                                        <span>
+                                            <img src="images/dashboard/icons/setting.png" alt="settings-image"
+                                                class="img-fluid">
+                                        </span>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-changepassword.html" class="text-decoration-none">
+                                        <span>
+                                            <img src="images/dashboard/icons/change-password.png" alt="statistics-image"
+                                                class="img-fluid">
+                                        </span>
+                                        Change Password
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-statistics.html" class="text-decoration-none">
+                                        <span>
+                                            <img src="images/dashboard/icons/statistics.png" alt="statistics-image"
+                                                class="img-fluid">
+                                        </span>
+                                        Statistics
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none">
+                                        <span>
+                                            <i class="fa fa-sign-out-alt"></i>
+                                        </span>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-9">
+                        <div class="block heading">
+                            <h3 class="text-center">Order #09-07-21-44548</h3>
+                        </div>
+                        <div class="block">
+                            <div class="processing-bar clearfix">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <div class="order-status text-center">
+                                <div class="parcel-shipped">
+                                    <img src="images/dashboard/icons/shipped.png" alt="shopping-image" class="img-fluid">
+                                    <span>Parcel is Shipped</span>
+                                </div>
+                                <div class="device-checked">
+                                    <img src="images/dashboard/icons/chcked.png" alt="checked-images" class="img-fluid">
+                                    <span>Device(s) checked</span>
+                                </div>
+                                <div class="order-paid">
+                                    <img src="images/dashboard/icons/paid.png" alt="paid-images" class="img-fluid">
+                                    <span>Order Paid</span>
+                                </div>
+                            </div>
+
+
+                            <div class="block order-table">
+                                <table class="table d-none d-lg-table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">
+                                            Date
+                                            <span></span>
+                                        </th>
+                                        <th scope="col">
+                                            Device QTY
+                                        </th>
+                                        <th scope="col">
+                                            Last Update
+                                        </th>
+                                        <th scope="col">Status</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            09-07-21-44548
+                                        </td>
+                                        <td>07-09-2021</td>
+                                        <td>1</td>
+                                        <td>No updates yet</td>
+                                        <td>
+                                            <label class="badge bg-warning text-white">
+                                                Waiting Shipment
+                                                <i class="fas fa-question-circle"></i>
+                                            </label>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="mobile-view table d-block d-lg-none">
+                                    <div class="tr clearfix">
+                                        <div class="td order-id">
+                                            <span>ID</span>
+                                            <a href="dashboard-orderdetails.html">09-07-21-44548</a>
+                                        </div>
+                                        <div class="td">
+                                            <span>Date</span>
+                                            07-09-2021
+                                        </div>
+                                        <div class="td">
+                                            <span>Device QTY</span>
+                                            1
+                                        </div>
+                                        <div class="td">
+                                            <span>Last Update</span>
+                                            No Update Yet
+                                        </div>
+                                        <div class="td">
+                                            <span>Status</span>
+                                            <span class="badge bg-warning text-white">Wating Shipment <i class="fas fa-question-circle"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="block order-info-buttons">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <a href="#" class="btn btn-primary btn-lg rounded-pill mb-2 mb-lg-0 mr-2">Delivery Note </a>
+                                        <a href="#" class="btn btn-primary btn-lg rounded-pill mb-2 mb-lg-0 mr-2">Packing Slip </a>
+                                        <a href="#" class="btn btn-primary btn-lg rounded-pill mb-2 mb-lg-0 mr-2">Receipt </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block order-description">
+                                <h3 class="my-3 text-center text-md-start">Order Device(s)</h3>
+                                <table class="table table-responsive">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">
+                                            Name description
+                                        </th>
+                                        <th scope="col">
+                                            Quantity
+                                        </th>
+                                        <th scope="col">
+                                            Price
+                                        </th>
+                                        <th scope="col">Status</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            <h5>iPhone 12 Pro Max</h5>
+                                            <h6>
+                                                <b>NETWORK:</b> GPS + Cellular, <b>Network:</b> AT&T, <b>CONDITION:</b>
+                                                LIKE NEW, <b>Capacity:</b> 16GB, <b>Condition:</b> GOOD
+                                            </h6>
+                                        </td>
+                                        <td>1</td>
+                                        <td>$ 240.00</td>
+                                        <td>
+                                            <label class="badge bg-warning text-white">
+                                                Waiting Shipment
+                                                <i class="fas fa-question-circle"></i>
+                                            </label>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="block tracking-status">
+                                <h3>Order status updates</h3>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>07-09-2021 7:56 pm - order created with USPS tracking </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/close.png" alt="close-png" class="img-fluid">
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card border-0">
+                <div class="card-body ps-0 pt-0 pe-0">
+                    <div class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <a href="#" class=" nav-item active rounded-pill" id="login" data-bs-toggle="tab" data-bs-target="#login-form" type="button" role="tab" aria-controls="login-form" aria-selected="true">Sign In</a>
+                        <a href="#" class="nav-item rounded-pill" id="create-account" data-bs-toggle="tab" data-bs-target="#create-account-form" type="button" role="tab" aria-controls="create-account-form" aria-selected="false">Registration</a>
+                    </div>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login-form" role="tabpanel" aria-labelledby="login">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12 mb-4 mb-sm-0 mx-auto">
+                                            <div class="card-part clearfix user-login">
+                                                <form class="needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <label for="loginemail"
+                                                            class="form-label">Email</label>
+                                                        <input type="text" class="form-control"
+                                                            id="loginemail" required>
+                                                        <div class="invalid-feedback">
+                                                            Required Email Address
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Field is Looking Good
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="loginpassword" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="loginpassword" required>
+                                                        <div class="invalid-feedback">
+                                                            Required Password
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Field is Looking Good
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Login</button>
+                                                </form>
+                                                <a href="#" class="forgot-password" id="resetBtn">Reset your
+                                                    password?</a>
+
+
+                                                    <div class="external-login">
+                                                        <div class="external-login-buttons">
+                                                            <a href="#" class="btn btn-facebook">
+                                                                <img src="images/checkout/fb_img.png"
+                                                                    alt="facebook" class="img-fluid">
+                                                            </a>
+                                                           
+                                                            <a href="#" class="btn btn-googlePlus">
+                                                                <img src="images/checkout/google_plus.png"
+                                                                    alt="facebook" class="img-fluid">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="card-part clearfix reset-password">
+                                                <form class="needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <label for="resetemail"
+                                                            class="form-label">Email</label>
+                                                        <input type="text" class="form-control"
+                                                            id="resetemail" required>
+                                                        <div class="invalid-feedback">
+                                                            Required Email Address
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Field is Looking Good
+                                                        </div>
+                                                        <p class="text-left">We’ll send you a link to change your password.</p>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Reset Password</button>
+                                                        <a href="#" class="btn btn-outline" id="backBtn">Back</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="create-account-form" role="tabpanel" aria-labelledby="create-account">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4 mb-sm-0 mx-auto">
+                                            <div class="card-part clearfix">
+                                                <form class="needs-validation" novalidate>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="fullName">Full Name</label>
+                                                                <input type="text" class="form-control" id="fullName" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Full Name
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="email">Email</label>
+                                                                <input type="text" class="form-control" id="email" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Email Address
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="password">Password</label>
+                                                                <input type="password" class="form-control" id="password" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Password
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="confirmPassword">Confirm Password</label>
+                                                                <input type="password" class="form-control" id="confirmPassword" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Confirm Password
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Create Account</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+    <footer>
+        <div id="top" class="footer-top-bg-color">
+            <div class="container">
+                <div class="block top-footer">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="footer-logo mb-3">
+                                <img src="images/logo.png" alt="logo" class="img-fluid">
+                            </div>
+                            <span class="footer-logo-text">
+                                All product and company names are trademarks of their respective holders. iPhone, iPad,
+                                iPod, iPod touch, Mac, and iMac are registered trademarks and property of Apple, Inc.
+                                Fixpal is a third-party repair company and is not affiliated with Apple, Samsung,
+                                Google, LG, Huawei, or any other brand on this site
+                            </span>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="custom-support">
+                                <h5>Customer support:</h5>
+                                <ul>
+                                    <li>
+                                        <a class="border-0" href="tel:9999999999">9999999999</a>
+                                    </li>
+                                    <li>
+                                        <a class="border-0" href="mailto:abc@gmail.com">indiaphpexpert@gmail.com</a>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <a class="border-0" href="tel:9999999999">9999999999</a>
+                                    </li>
+                                    <li>
+                                        <a class="border-0" href="mailto:abc@gmail.com">indiaphpexpert@gmail.com</a>
+                                    </li>
+                                </ul>
+
+                                <h5 class="mt-3">Our Address:</h5>
+
+                                <ul class="mt-2 our_address_section">
+                                    <li>
+                                        B/610, Empire Business Hub, Opposite Shakti Arcade, Science City Road,
+                                        Sola<br>Ahmedabad Gujarat 380060<br>US </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="company">
+                                <h5>Column Title</h5>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="marketing-collaboration">
+                                <h5>Column Title</h5>
+                                <ul>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="copy-right" class="py-1 copyright-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block p-0 text-center">
+                            <p class="my-2">© CodePlusSolutions Pvt. Ltd @ 2021 All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.en-CA.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

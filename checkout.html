@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out | BuyBackScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="brand-nav-color">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo" class="img-fluid desktop-logo">
+                </a>
+                <div class="right-section" id="right-header-sm">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cart" href="#">
+                                <!-- <i class="fas fa-shopping-cart"></i> -->
+                                <img src="images/cart.png" alt="cart" class="img-fluid">
+                                <div class="cart-item-number">
+                                    <p>10</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="offcanvas offcanvas-end mobile-bg" tabindex="-1" id="offcanvasNavbar"
+                    >
+                    <div class="offcanvas-header">
+
+                        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sell
+                                    <i class="fas fa-chevron-down" id="downarrow"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Instant Quote</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Why us?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">How it works?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Track Order</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="offcanvasNavbarDropdown2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    MORE
+                                    <i class="fas fa-chevron-down" id="downarrow1"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="right-section" id="right-header-lg">
+                            <ul class="nav d-flex justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link cart" href="#">
+                                        <!-- <i class="fas fa-shopping-basket"></i> -->
+                                        <img src="images/cart.png" alt="cart" class="img-fluid">
+                                        <div class="cart-item-number">
+                                            <p>10</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block heading">
+                                    <h3>CHECKOUT</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button clearfix" type="button"  aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <span>1. Account</span>
+                                                <a href="#" class="btn btn-link" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne">Edit</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6 mb-4 mb-sm-0">
+                                                                <div class="card-part clearfix">
+                                                                    <h3>Guest Checkout</h3>
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <label>Email</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary">Continue as a
+                                                                            Guest</button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="card-part clearfix">
+                                                                    <h3>Customer Login</h3>
+                                                                    <form>
+                                                                        <div class="form-group">
+                                                                            <label>Email</label>
+                                                                            <input type="email" class="form-control">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Password</label>
+                                                                            <input type="password" class="form-control">
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary">Login</button>
+                                                                        <!-- <h5 class="d-block d-md-inline-block mt-2 mt-md-0">OR</h5> -->
+                                                                        <a href="#" class="d-block d-md-inline-block mt-2 mt-md-0">Create an
+                                                                            account</a>
+                                                                    </form>
+                                                                    <a href="#" class="forgot-password">Reset your
+                                                                        password?</a>
+
+                                                                    <div class="external-login">
+                                                                        <div class="external-login-buttons">
+                                                                            <a href="#" class="btn btn-facebook">
+                                                                                <img src="images/checkout/fb_img.png"
+                                                                                    alt="facebook" class="img-fluid">
+                                                                            </a>
+                                                                            <a href="#" class="btn btn-googlePlus">
+                                                                                <img src="images/checkout/google_plus.png"
+                                                                                    alt="facebook" class="img-fluid">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <span>2. Payment options</span>
+                                                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Edit</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="card-part clearfix">
+                                                            <h3>HOW WOULD YOU LIKE TO BE PAID?</h3>
+                                                            <div class="custom-radio-small-pill">
+                                                                <div class="custom-radio">
+                                                                    <input class="custom-input" type="radio"
+                                                                        name="radio" id="bank" value="option1" onclick="Bank()"
+                                                                        checked>
+                                                                    <label class="custom-label" for="bank">
+                                                                        <span>Bank</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="custom-radio">
+                                                                    <input class="custom-input" type="radio"
+                                                                        name="radio" id="paypal" value="option2" onclick="PayPal()">
+                                                                    <label class="custom-label" for="paypal">
+                                                                        <span>Paypal</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="custom-radio">
+                                                                    <input class="custom-input" type="radio"
+                                                                        name="radio" id="check" value="option2" onclick="Check()">
+                                                                    <label class="custom-label" for="check">
+                                                                        <span>check</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <form>
+                                                                <div class="row" id="Bank">
+                                                                    <div class="form-group">
+                                                                        <label>Please enter correct bank
+                                                                            details</label>
+                                                                        <input type="email" class="form-control"
+                                                                            placeholder="Account Holder Name">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="password" class="form-control"
+                                                                            placeholder="Account Number">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="password" class="form-control"
+                                                                            placeholder="short Code">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" id="Paypal" style="display: none;">
+                                                                    <div class="form-group">
+                                                                        <label>Please enter correct paypal address</label>
+                                                                        <input type="email" class="form-control"
+                                                                            placeholder="Paypal address">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="password" class="form-control"
+                                                                            placeholder="Repeat Paypal Address">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" id="Check" style="display: none;">
+                                                                    <div class="form-group">
+                                                                        <label>We will send check of your name.</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="btn btn-primary float-end my-3">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <span>3. Shipping</span>
+                                                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseThree">Edit</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="card-part mb-5 clearfix">
+                                                                    <h3>SHIPPING DETAIL</h3>
+                                                                    <form>
+                                                                        <div class="form-group row">
+                                                                            <div class="col-lg-4 mt-2 mt-lg-0">
+                                                                                <label>First Name</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                            <div class="col-lg-4 mt-2 mt-lg-0">
+                                                                                <label>last Name</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                            <div class="col-lg-4 mt-2 mt-lg-0">
+                                                                                <label>Phone</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group row">
+                                                                            <div class="col-lg-6 mt-2 mt-lg-0">
+                                                                                <label>Street address</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                            <div class="col-lg-6 mt-2 mt-lg-0">
+                                                                                <label>Street address 2
+                                                                                    (optional)</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group row">
+                                                                            <div class="col-lg-6 mt-2 mt-lg-0">
+                                                                                <label>City</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                            <div class="col-lg-6 mt-2 mt-lg-0">
+                                                                                <label>Zip Code</label>
+                                                                                <input type="email"
+                                                                                    class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="card-part clearfix">
+                                                                    <h3>SELECT SHIPPING METHOD</h3>
+                                                                    <form>
+                                                                        <div class="form-check shipping-custom-radio">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="radio1" onclick="radioOne()">
+                                                                            <label class="form-check-label mb-0"
+                                                                                for="radio1">
+                                                                                Print A Prepaid Label
+                                                                            </label>
+                                                                            <img src="images/checkout/121619_print_a_prepaid_label_image.png"
+                                                                                alt="shipping-image" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="form-check shipping-custom-radio">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="radio2" onclick="radioTwo()">
+                                                                            <label class="form-check-label mb-0"
+                                                                                for="radio2">
+                                                                                Send me a Box and Label
+                                                                            </label>
+                                                                            <img src="images/checkout/121619_use_my_own_courier_image.png"
+                                                                                alt="shipping-image" class="img-fluid">
+                                                                        </div>
+
+                                                                        <div class="form-check shipping-custom-radio">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="radio3" onclick="radioThree()">
+                                                                            <label class="form-check-label mb-0"
+                                                                                for="radio3">
+                                                                                Meet @ Coffee Shop
+                                                                            </label>
+                                                                            <img src="images/checkout/121619_store_image.png"
+                                                                                alt="shipping-image" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="form-check shipping-custom-radio">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="radio4" onclick="radioFour()">
+                                                                            <label class="form-check-label mb-0"
+                                                                                for="radio4">
+                                                                                Meet @ store
+                                                                            </label>
+                                                                            <img src="images/checkout/121619_use_my_own_courier_image.png"
+                                                                                alt="shipping-image" class="img-fluid">
+                                                                        </div>
+
+                                                                        <div class="form-check shipping-custom-radio">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="radio5" onclick="radioFive()">
+                                                                            <label class="form-check-label mb-0"
+                                                                                for="radio5">
+                                                                                We Come To You
+                                                                            </label>
+                                                                            <img src="images/checkout/121619_we_come_for_you_image.png"
+                                                                                alt="shipping-image" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="form-check shipping-custom-radio">
+                                                                            <input class="form-check-input" type="radio"
+                                                                                name="flexRadioDefault"
+                                                                                id="radio6" onclick="radioSix()">
+                                                                            <label class="form-check-label mb-0"
+                                                                                for="radio6">
+                                                                                I will send you tracking
+                                                                            </label>
+                                                                            <img src="images/checkout/125621_post_me_a_prepaid_label_image.png"
+                                                                                alt="shipping-image" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="row" id="Radio1" style="display: none;">
+                                                                            <div class="form-group mt-2">
+                                                                                <label>We will send check of your name.</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="Radio2" style="display: none;">
+                                                                            <div class="form-group mt-2">
+                                                                                <label>We will send check of your name.</label>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Open this select menu</option>
+                                                                                    <option value="1">One</option>
+                                                                                  </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="Radio3" style="display: none;">
+                                                                            <div class="form-group mt-2">
+                                                                                <label>Coffee Shop</label>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Open this select menu</option>
+                                                                                    <option value="1">One</option>
+                                                                                  </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="Radio4" style="display: none;">
+                                                                            <div class="form-group mt-2">
+                                                                                <label>Shop</label>
+                                                                                <select class="form-select" aria-label="Default select example">
+                                                                                    <option selected>Open this select menu</option>
+                                                                                    <option value="1">One</option>
+                                                                                  </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="Radio5" style="display: none;">
+                                                                            <div class="form-group mt-2">
+                                                                                <label>Date</label>
+                                                                                <input type="text" class="form-control" placeholder="Give a date">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" id="Radio6" style="display: none;">
+                                                                            <div class="form-group mt-2">
+                                                                                <label>I will Send you tracking number</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <button type="submit"
+                                                            class="btn btn-primary float-end my-3">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                <span>4. Additional Options and Terms</span>
+                                                <a href="#" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseFour">Edit</a>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="card-part clearfix">
+                                                                    <h3>TERMS & CONDITIONS</h3>
+                                                                    <form>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" value=""
+                                                                                id="flexCheckDefault">
+                                                                            <label class="form-check-label"
+                                                                                for="flexCheckDefault">
+                                                                                I accept
+                                                                                <a href="#">
+                                                                                    Terms & Conditions
+                                                                                </a>
+                                                                            </label>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit"
+                                                            class="btn btn-primary float-end my-3">Checkout</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-4 mt-lg-0">
+                                <div class="block product-purchase-summary clearfix">
+                                    <div class="title clearfix">
+                                        <h4 class="float-start">Summary</h4>
+                                        <a href="#" class="btn btn-link float-end">Edit</a>
+                                    </div>
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-3 col-lg-2 col-xl-2">
+                                                            <img src="images/checkout/headset.png" alt="headset"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="col-md-9 col-9 col-lg-10 col-xl-10">
+                                                            <h3>Iphone 12 Pro Max</h3>
+                                                            <h4>
+                                                                Iphone 12 Pro Max<br><strong>Network:</strong> GPS +
+                                                                Cellular
+                                                            </h4>
+                                                            <h5>$ 230.00</h5>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-3 col-lg-2 col-xl-2">
+                                                            <img src="images/checkout/headset.png" alt="headset"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="col-md-9 col-9 col-lg-10 col-xl-10">
+                                                            <h3>Iphone 12 Pro Max</h3>
+                                                            <h4>
+                                                                Iphone 12 Pro Max<br><strong>Network:</strong> GPS +
+                                                                Cellular
+                                                            </h4>
+                                                            <h5>$ 230.00</h5>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="total-price clearfix">
+                                        <h5 class="float-start">SELL ORDER TOTAL</h5>
+                                        <h5 class="float-end">$ 460</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="images/close.png" alt="close-png" class="img-fluid">
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="card border-0">
+                <div class="card-body ps-0 pt-0 pe-0">
+                    <div class="nav nav-tabs border-0" id="myTab" role="tablist">
+                        <a href="#" class=" nav-item active rounded-pill" id="login" data-bs-toggle="tab" data-bs-target="#login-form" type="button" role="tab" aria-controls="login-form" aria-selected="true">Sign In</a>
+                        <a href="#" class="nav-item rounded-pill" id="create-account" data-bs-toggle="tab" data-bs-target="#create-account-form" type="button" role="tab" aria-controls="create-account-form" aria-selected="false">Registration</a>
+                    </div>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login-form" role="tabpanel" aria-labelledby="login">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12 mb-4 mb-sm-0 mx-auto">
+                                            <div class="card-part clearfix user-login">
+                                                <form class="needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <label for="loginemail"
+                                                            class="form-label">Email</label>
+                                                        <input type="text" class="form-control"
+                                                            id="loginemail" required>
+                                                        <div class="invalid-feedback">
+                                                            Required Email Address
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Field is Looking Good
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="loginpassword" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="loginpassword" required>
+                                                        <div class="invalid-feedback">
+                                                            Required Password
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Field is Looking Good
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Login</button>
+                                                </form>
+                                                <a href="#" class="forgot-password" id="resetBtn">Reset your
+                                                    password?</a>
+
+
+                                                    <div class="external-login">
+                                                        <div class="external-login-buttons">
+                                                            <a href="#" class="btn btn-facebook">
+                                                                <img src="images/checkout/fb_img.png"
+                                                                    alt="facebook" class="img-fluid">
+                                                            </a>
+                                                           
+                                                            <a href="#" class="btn btn-googlePlus">
+                                                                <img src="images/checkout/google_plus.png"
+                                                                    alt="facebook" class="img-fluid">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="card-part clearfix reset-password">
+                                                <form class="needs-validation" novalidate>
+                                                    <div class="form-group">
+                                                        <label for="resetemail"
+                                                            class="form-label">Email</label>
+                                                        <input type="text" class="form-control"
+                                                            id="resetemail" required>
+                                                        <div class="invalid-feedback">
+                                                            Required Email Address
+                                                        </div>
+                                                        <div class="valid-feedback">
+                                                            Field is Looking Good
+                                                        </div>
+                                                        <p class="text-left">We’ll send you a link to change your password.</p>
+                                                    </div>
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Reset Password</button>
+                                                        <a href="#" class="btn btn-outline" id="backBtn">Back</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="create-account-form" role="tabpanel" aria-labelledby="create-account">
+
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-4 mb-sm-0 mx-auto">
+                                            <div class="card-part clearfix">
+                                                <form class="needs-validation" novalidate>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="fullName">Full Name</label>
+                                                                <input type="text" class="form-control" id="fullName" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Full Name
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="email">Email</label>
+                                                                <input type="text" class="form-control" id="email" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Email Address
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="password">Password</label>
+                                                                <input type="password" class="form-control" id="password" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Password
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label for="confirmPassword">Confirm Password</label>
+                                                                <input type="password" class="form-control" id="confirmPassword" required>
+                                                                <div class="invalid-feedback">
+                                                                    Required Confirm Password
+                                                                </div>
+                                                                <div class="valid-feedback">
+                                                                    Looks Good
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Create Account</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+ </div>
+
+    <footer>
+        <div id="top" class="footer-top-bg-color">
+            <div class="container">
+                <div class="block top-footer">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="footer-logo mb-3">
+                                <img src="images/logo.png" alt="logo" class="img-fluid">
+                            </div>
+                            <span class="footer-logo-text">
+                                All product and company names are trademarks of their respective holders. iPhone, iPad,
+                                iPod, iPod touch, Mac, and iMac are registered trademarks and property of Apple, Inc.
+                                Fixpal is a third-party repair company and is not affiliated with Apple, Samsung,
+                                Google, LG, Huawei, or any other brand on this site
+                            </span>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="custom-support">
+                                <h5>Customer support:</h5>
+                                <ul>
+                                    <li>
+                                        <a class="border-0" href="tel:9999999999">9999999999</a>
+                                    </li>
+                                    <li>
+                                        <a class="border-0" href="mailto:abc@gmail.com">indiaphpexpert@gmail.com</a>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li>
+                                        <a class="border-0" href="tel:9999999999">9999999999</a>
+                                    </li>
+                                    <li>
+                                        <a class="border-0" href="mailto:abc@gmail.com">indiaphpexpert@gmail.com</a>
+                                    </li>
+                                </ul>
+
+                                <h5 class="mt-3">Our Address:</h5>
+
+                                <ul class="mt-2 our_address_section">
+                                    <li>
+                                        B/610, Empire Business Hub, Opposite Shakti Arcade, Science City Road,
+                                        Sola<br>Ahmedabad Gujarat 380060<br>US </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="company">
+                                <h5>Column Title</h5>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-lg-3 col-md-6">
+                            <div class="marketing-collaboration">
+                                <h5>Column Title</h5>
+                                <ul>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                    <li><a href="#">Computer</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="copy-right" class="py-1 copyright-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block p-0 text-center">
+                            <p class="my-2">© CodePlusSolutions Pvt. Ltd @ 2021 All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-datepicker.en-CA.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

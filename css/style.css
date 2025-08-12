@@ -21330,7 +21330,7 @@ header .navbar-nav .nav-item .nav-link {
   text-align: center;
 }
 header .navbar-nav .nav-item .nav-link:hover {
-  color: #0D9488;
+  color: #111827;
   border-bottom: none;
 }
 @media (min-width: 992px) {

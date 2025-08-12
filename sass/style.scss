@@ -108,7 +108,7 @@ header {
                 text-align: center;
 
                 &:hover {
-                    color: $nav-menu-hover-color;
+                    color: $natural-color;
                     border-bottom: none;
 
                     @include media-breakpoint-up(lg) {

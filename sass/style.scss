@@ -358,7 +358,7 @@ main {
             .form-control {
                 float: left;
                 background-color: transparent;
-                color:$neutral-color;
+                color: $neutral-color;
                 border: none !important;
                 text-align: left;
                 max-width: 260px;
@@ -476,6 +476,7 @@ main {
             z-index: -2;
             margin: -3px;
             border-radius: inherit;
+            transition: 0.5s;
             background: -webkit-gradient(linear, left top, right top, from($cih-secondary-color), to($cih-primary-color));
             background: $secondary-color;
         }
@@ -625,6 +626,7 @@ main {
 
                 &:hover {
                     background: $secondary-color;
+                    transition: 0.5s;
                     border: 1px solid #fff !important;
 
                     .image {
@@ -818,7 +820,7 @@ main {
     .block {
         &.heading {
             h3 {
-                color:$natural-color !important;
+                color: $natural-color !important;
             }
         }
 
@@ -837,6 +839,7 @@ main {
                     box-shadow: none;
                     padding: 15px;
                     min-height: 150px;
+
 
                     h4 {
                         color: $natural-color !important;
@@ -859,6 +862,13 @@ main {
 
                     .review-star {
                         color: $gold-star-color;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background: $secondary-color;
+                        transition: 0.5s;
+                        color: $neutral-color;
                     }
                 }
             }
@@ -3082,7 +3092,8 @@ footer {
 
     .block {
         .card {
-            border: radius 5px;;
+            border: radius 5px;
+            ;
 
             .card-body {
                 .nav-tabs {
@@ -5372,7 +5383,7 @@ footer {
             h3 {
                 text-align: center;
                 font-size: 40px;
-                color:$natural-color;
+                color: $natural-color;
                 line-height: 42px;
                 margin-bottom: 0px;
                 font-weight: 600;
@@ -5632,14 +5643,15 @@ footer {
             h3 {
                 text-align: center;
                 font-size: 40px;
-                color:$natural-color;
+                color: $natural-color;
                 line-height: 42px;
                 margin-bottom: 0px;
                 font-weight: 600;
             }
         }
     }
-    p{
+
+    p {
         line-height: 30px;
     }
 }

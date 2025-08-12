@@ -21672,6 +21672,7 @@ main .slider-image-wrap img {
   z-index: -2;
   margin: -3px;
   border-radius: inherit;
+  transition: 0.5s;
   background: -webkit-gradient(linear, left top, right top, from(#0D9488), to(#14B8A6));
   background: #14B8A6;
 }
@@ -21794,6 +21795,7 @@ main .slider-image-wrap img {
 }
 .select_category .block .row .card:hover {
   background: #14B8A6;
+  transition: 0.5s;
   border: 1px solid #fff !important;
 }
 .select_category .block .row .card:hover .image .main-image {
@@ -21979,6 +21981,12 @@ main .slider-image-wrap img {
 }
 .review .block.review-col .card .card-body .review-star {
   color: #FAA21C;
+}
+.review .block.review-col .card .card-body:hover {
+  cursor: pointer;
+  background: #14B8A6;
+  transition: 0.5s;
+  color: #FAFAFA;
 }
 
 .read_start {

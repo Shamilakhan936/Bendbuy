@@ -1599,6 +1599,7 @@ footer {
 
                 &:hover {
                     background: $secondary-color;
+                    transition: 0.5s;
                     border: 1px solid #fff !important;
 
                     .image {

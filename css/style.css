@@ -22460,6 +22460,7 @@ footer .marketing-collaboration ul li a:hover {
 }
 .brand_list .block .row .card:hover {
   background: #14B8A6;
+  transition: 0.5s;
   border: 1px solid #fff !important;
 }
 .brand_list .block .row .card:hover .image .main-image {

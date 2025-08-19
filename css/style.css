@@ -19047,7 +19047,7 @@ readers do not read off random characters that represent icons */
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #FAFAFA;
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .btn-secondary {

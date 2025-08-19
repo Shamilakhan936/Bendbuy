@@ -137,6 +137,7 @@ header {
             .dropdown-menu {
                 background-color: $sub-menu-background-color;
                 padding: 0;
+                padding-left: 20px;
 
                 @include media-breakpoint-down(lg) {
                     background-color: transparent;
@@ -1762,7 +1763,7 @@ footer {
 
         &::placeholder {
             text-align: center;
-            color: $footer-text-color;
+            color: $natural-color;
 
             @include media-breakpoint-down(sm) {
                 font-size: 14px;
@@ -1892,11 +1893,11 @@ footer {
                 padding-bottom: 12px;
 
                 @include media-breakpoint-down(lg) {
-                    margin-bottom: 0.6rem;
+                    margin-bottom: 0rem;
                 }
 
                 @include media-breakpoint-down(sm) {
-                    margin-bottom: 0.5rem;
+                    margin-bottom: 0;
                 }
             }
 
@@ -2326,6 +2327,9 @@ footer {
 
     #accordionExample {
         margin: 0 150px;
+         @include media-breakpoint-down(sm) {
+            margin: 0 20px;
+                    }
 
         .accordion-item {
             border-top: 1px solid rgba(0, 0, 0, 0.125);
@@ -2587,9 +2591,20 @@ footer {
                             width: 100%;
                         }
 
-                        h6 {
+                        h5 {
+                            font-size: 18px;
+
                             @include media-breakpoint-down(lg) {
-                                font-size: 12px;
+                                font-size: 14px;
+                            }
+
+                        }
+
+                        h6 {
+                            font-size: 14px;
+
+                            @include media-breakpoint-down(lg) {
+                                font-size: 10px;
                             }
                         }
                     }
@@ -2881,6 +2896,7 @@ footer {
                     color: $natural-color;
                     background-color: unset;
                     box-shadow: none;
+                    padding-bottom: 0px !important;
                 }
 
                 span {
@@ -3013,7 +3029,7 @@ footer {
                                 @include media-breakpoint-down(lg) {
                                     display: flex;
                                     justify-content: center;
-                                    flex-wrap: wrap;
+                                    flex-direction: column;
                                 }
 
                                 .custom-radio {
@@ -3022,6 +3038,10 @@ footer {
                                     display: inline-flex;
                                     margin-right: 1rem;
                                     margin-bottom: 8px;
+
+                                    @include media-breakpoint-down(lg) {
+                                        justify-content: center;
+                                    }
 
                                     .custom-input {
                                         position: absolute;
@@ -3870,6 +3890,22 @@ footer {
             padding: 0;
         }
 
+        .card {
+            .dashboard-button {
+                @include media-breakpoint-down(sm) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .dashboard-btn{
+                    @include media-breakpoint-down(sm) {
+                        width: 100%;
+                }
+            }
+        }
+    }
+
         .left-sidebar {
             padding-top: 30px;
 
@@ -4036,6 +4072,7 @@ footer {
                     color: #aeb4b9;
                     height: 45px;
                     box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+
 
                     &:focus-visible {
                         outline: -webkit-focus-ring-color auto 0px;
@@ -4557,6 +4594,23 @@ footer {
                             &:nth-child(4) {
                                 width: 100px;
                             }
+
+                            h5 {
+                                font-size: 18px;
+
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            h6 {
+                                font-size: 16px;
+
+                                @include media-breakpoint-down(sm) {
+                                    font-size: 10px;
+                                }
+
+                            }
                         }
                     }
                 }
@@ -4995,6 +5049,18 @@ footer {
         &.order-info {
             @include media-breakpoint-down(sm) {
                 text-align: center;
+            }
+            .delivery-btns{
+                 @include media-breakpoint-down(sm) {
+                    display: flex;
+                    flex-direction: column;
+
+                 }
+                 .delivery-btnns{
+                     @include media-breakpoint-down(sm) {
+                        width: 100%;
+                     }
+                 }
             }
         }
     }
@@ -5730,5 +5796,3 @@ footer {
         }
     }
 }
-
-// } 

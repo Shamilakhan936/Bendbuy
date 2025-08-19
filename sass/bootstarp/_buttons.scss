@@ -56,11 +56,7 @@
 //
 
 // scss-docs-start btn-variant-loops
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include button-variant($value, $value);
-  }
-}
+// style="height: 145px"
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {

@@ -105,7 +105,11 @@ header {
                 border-radius: 0;
                 font-weight: 400;
                 letter-spacing: 0.7px;
-                text-align: center;
+                text-align: start;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 5px;
 
                 &:hover {
                     color: $natural-color;
@@ -132,6 +136,7 @@ header {
 
             .dropdown-menu {
                 background-color: $sub-menu-background-color;
+                padding: 0;
 
                 @include media-breakpoint-down(lg) {
                     background-color: transparent;
@@ -141,7 +146,7 @@ header {
 
                 li {
                     @include media-breakpoint-down(lg) {
-                        border-bottom: 1px solid #fff;
+                        // border-bottom: 1px solid #fff;
                     }
 
                     &:last-child {
@@ -152,6 +157,7 @@ header {
 
                     .dropdown-item {
                         color: $natural-color;
+                        text-align: start;
 
                         @include media-breakpoint-down(lg) {
                             color: $nav-menu-color;
@@ -540,10 +546,10 @@ main {
         text-align: center;
         color: $natural-color;
 
-         @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(sm) {
             font-size: 14px;
 
-            }
+        }
     }
 }
 
@@ -598,15 +604,15 @@ main {
 
 
         .col-margin {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
         }
 
         .row {
             .card {
                 @include media-breakpoint-down(sm) {}
 
-                max-height: 230px;
-                min-height: 230px;
+                max-height: 190px;
+                min-height: 190px;
                 overflow: hidden;
                 text-decoration: none;
                 -webkit-box-shadow: none;
@@ -614,7 +620,7 @@ main {
                 text-align: center;
                 display: block;
                 border: 1px solid #e1e1e1;
-                padding: 45px 15px 15px !important;
+                padding: 30px 15px 15px !important;
                 border-radius: 20px !important;
                 box-shadow: 0 0 50px 0 rgba(53, 52, 51, 0.15);
 
@@ -1597,11 +1603,12 @@ footer {
                 // padding: 45px 15px 15px !important;
                 border-radius: 20px !important;
                 box-shadow: 0 0 50px 0 rgba(53, 52, 51, 0.15);
+
                 @include media-breakpoint-down(sm) {
-                max-height: 150px;
-                min-height: 166px;
-            } 
-      
+                    max-height: 150px;
+                    min-height: 166px;
+                }
+
                 .image {
                     img {
                         overflow: hidden !important;
@@ -1611,9 +1618,10 @@ footer {
                         width: auto;
                         -webkit-filter: grayscale(100%);
                         filter: grayscale(100%);
-                         @include media-breakpoint-down(sm) {
+
+                        @include media-breakpoint-down(sm) {
                             max-height: 90px !important;
-                         }
+                        }
                     }
 
                     img+img {
@@ -2580,7 +2588,7 @@ footer {
 
                         h6 {
                             @include media-breakpoint-down(lg) {
-                                font-size: 15px;
+                                font-size: 12px;
                             }
                         }
                     }
@@ -2649,7 +2657,6 @@ footer {
                 &:nth-child(even) {
                     border-radius: 0;
                     border-bottom: 1px solid #f1f1f1;
-                    border-top: 1px solid #f1f1f1;
                 }
             }
 
@@ -2740,7 +2747,7 @@ footer {
         padding: 5px 23px;
 
         @include media-breakpoint-down(md) {
-            padding: 1px 17px;
+            padding: 4px 6px;
         }
 
     }
@@ -5149,9 +5156,9 @@ footer {
                     font-size: 18px;
                     font-weight: bolder;
                     color: #000;
-                    border-radius: 0px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                    border-radius: 5px !important;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
 
                 .active {

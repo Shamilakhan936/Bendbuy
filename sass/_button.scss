@@ -35,14 +35,14 @@
    text-transform: uppercase;
    color: $neutral-color;
 }
-.btn-primary:hover {
-   -webkit-box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
-   box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
-   color: $neutral-color !important; 
-   background: $primary-color;
-   // background: -webkit-gradient(linear, left top, right top, from($button-secondary-color), to($button-primary-color));
-   // background: linear-gradient(to right, $button-secondary-color, $primary-color);
-}
+// .btn-primary:hover {
+//    -webkit-box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
+//    box-shadow: 0 6px 7px rgba(0, 0, 0, 0.2);
+//    color: $neutral-color !important; 
+//    background: $primary-color;
+//    // background: -webkit-gradient(linear, left top, right top, from($button-secondary-color), to($button-primary-color));
+//    // background: linear-gradient(to right, $button-secondary-color, $primary-color);
+// }
 .btn-secondary {
     background: -webkit-gradient(linear, left top, right top, from($primary-color), to($button-secondary-color));
    background: linear-gradient(to right, $primary-color, $button-secondary-color) !important;

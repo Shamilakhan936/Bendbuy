@@ -23,7 +23,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cart" href="#">
+                            <a class="nav-link cart" href="./cart.html">
                                 <img src="images/cart.png" alt="cart" class="img-fluid">
                                 <div class="cart-item-number">
                                     <p>10</p>
@@ -36,8 +36,7 @@
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="offcanvas offcanvas-end mobile-bg" tabindex="-1" id="offcanvasNavbar"
-                    >
+                <div class="offcanvas offcanvas-end mobile-bg" tabindex="-1" id="offcanvasNavbar">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
@@ -82,11 +81,12 @@
                         <div class="right-section" id="right-header-lg">
                             <ul class="nav d-flex justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <a class="nav-link login" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link cart" href="#">
+                                    <a class="nav-link cart" href="./cart.html">
                                         <img src="images/cart.png" alt="cart" class="img-fluid">
                                         <div class="cart-item-number">
                                             <p>10</p>
@@ -117,8 +117,8 @@
                                         <div class="table-col no d-flex align-items-center">No</div>
                                         <div class="table-col details d-flex align-items-center">Trade-In Details</div>
                                         <div class="table-col quantity d-flex align-items-center">Quantity</div>
-                                        <div class="table-col value d-flex align-items-center">Item Value</div> 
-                                        <div class="table-col action d-flex align-items-center">Action</div> 
+                                        <div class="table-col value d-flex align-items-center">Item Value</div>
+                                        <div class="table-col action d-flex align-items-center">Action</div>
                                     </div>
 
                                     <div class="item-table-row d-md-flex clearfix">
@@ -131,9 +131,11 @@
                                                 <div class="col-9 col-md-10">
                                                     <h5>iPhone 12 Pro Max</h5>
                                                     <h6>
-                                                        <b>NETWORK:</b> GPS + Cellular, <b>Network:</b> AT&T, <b>CONDITION:</b> LIKE NEW, <b>Capacity:</b> 16GB, <b>Condition:</b> GOOD
+                                                        <b>NETWORK:</b> GPS + Cellular, <b>Network:</b> AT&T,
+                                                        <b>CONDITION:</b> LIKE NEW, <b>Capacity:</b> 16GB,
+                                                        <b>Condition:</b> GOOD
                                                     </h6>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -165,7 +167,9 @@
                                                 <div class="col-9 col-md-10">
                                                     <h5>iPhone 12 Pro Max</h5>
                                                     <h6>
-                                                        <b>NETWORK:</b> GPS + Cellular, <b>Network:</b> AT&T, <b>CONDITION:</b> LIKE NEW, <b>Capacity:</b> 16GB, <b>Condition:</b> GOOD
+                                                        <b>NETWORK:</b> GPS + Cellular, <b>Network:</b> AT&T,
+                                                        <b>CONDITION:</b> LIKE NEW, <b>Capacity:</b> 16GB,
+                                                        <b>Condition:</b> GOOD
                                                     </h6>
                                                     <!-- <a href="#" class="btn btn-bordered-transparent-bg-black rounded-pill button-padding">Edit</a>
                                                     <a href="#" class="btn btn-bordered-transparent-bg-red rounded-pill button-padding">Remove</a> -->
@@ -178,7 +182,7 @@
                                         </div>
                                         <div class="table-col value d-flex align-items-center">
                                             <h6>$ 130.00</h6>
-                                        </div> 
+                                        </div>
                                         <div class="table-col action d-flex align-items-center">
                                             <div class="clearfix">
                                                 <a href="#" class="edit-button">
@@ -188,19 +192,41 @@
                                                     <i class="fas fa-times"></i>
                                                 </a>
                                             </div>
-                                        </div>  
+                                        </div>
                                     </div>
                                     <div class="cart-update border-top clearfix">
-                                        <div class="row">
+                                        <!-- Wrap in a flex container only on small screens -->
+                                        <div class="container px-1 py-2 d-sm-none">
+                                            <div class="d-flex justify-content-between flex-nowrap gap-2 overflow-auto">
+                                                <a href="#"
+                                                    class="btn btn-bordered-transparent-bg-red button-padding">Empty
+                                                    Cart</a>
+                                                <a href="#"
+                                                    class="btn btn-bordered-transparent-bg-black button-padding">Add
+                                                    Device</a>
+                                                <a href="#"
+                                                    class="btn btn-bordered-transparent-bg-black button-padding">Update
+                                                    Quantity</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- Original layout shown on md and up -->
+                                        <div class="row d-none d-sm-flex">
                                             <div class="col-md-6">
                                                 <div class="text-center text-sm-start">
-                                                    <a href="#" class="btn btn-bordered-transparent-bg-red button-padding">Empty Cart</a>
+                                                    <a href="#"
+                                                        class="btn btn-bordered-transparent-bg-red button-padding">Empty
+                                                        Cart</a>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="text-center text-sm-end">
-                                                    <a href="#" class="btn btn-bordered-transparent-bg-black button-padding">Add Device</a>
-                                                    <a href="#" class="btn btn-bordered-transparent-bg-black button-padding">Update Quantity</a>
+                                                    <a href="#"
+                                                        class="btn btn-bordered-transparent-bg-black button-padding">Add
+                                                        Device</a>
+                                                    <a href="#"
+                                                        class="btn btn-bordered-transparent-bg-black button-padding">Update
+                                                        Quantity</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -240,24 +266,29 @@
         </div>
     </div>
 
-         <!-- Modal -->
-         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close">
-                    <img src="images/close.png" alt="close-png" class="img-fluid">
-                  </button>
+                    <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/close.png" alt="close-png" class="img-fluid">
+                    </button>
                 </div>
                 <div class="modal-body">
                     <div class="card border-0">
                         <div class="card-body ps-0 pt-0 pe-0">
                             <div class="nav nav-tabs border-0" id="myTab" role="tablist">
-                                <a href="#" class=" nav-item active rounded-pill" id="login" data-bs-toggle="tab" data-bs-target="#login-form" type="button" role="tab" aria-controls="login-form" aria-selected="true">Sign In</a>
-                                <a href="#" class="nav-item rounded-pill" id="create-account" data-bs-toggle="tab" data-bs-target="#create-account-form" type="button" role="tab" aria-controls="create-account-form" aria-selected="false">Registration</a>
+                                <a href="#" class=" nav-item active rounded-pill" id="login" data-bs-toggle="tab"
+                                    data-bs-target="#login-form" type="button" role="tab" aria-controls="login-form"
+                                    aria-selected="true">Sign In</a>
+                                <a href="#" class="nav-item rounded-pill" id="create-account" data-bs-toggle="tab"
+                                    data-bs-target="#create-account-form" type="button" role="tab"
+                                    aria-controls="create-account-form" aria-selected="false">Registration</a>
                             </div>
-                              <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="login-form" role="tabpanel" aria-labelledby="login">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="login-form" role="tabpanel"
+                                    aria-labelledby="login">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="row">
@@ -265,10 +296,9 @@
                                                     <div class="card-part clearfix user-login">
                                                         <form class="needs-validation" novalidate>
                                                             <div class="form-group">
-                                                                <label for="loginemail"
-                                                                    class="form-label">Email</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="loginemail" required>
+                                                                <label for="loginemail" class="form-label">Email</label>
+                                                                <input type="text" class="form-control" id="loginemail"
+                                                                    required>
                                                                 <div class="invalid-feedback">
                                                                     Required Email Address
                                                                 </div>
@@ -276,10 +306,12 @@
                                                                     Field is Looking Good
                                                                 </div>
                                                             </div>
-        
+
                                                             <div class="form-group">
-                                                                <label for="loginpassword" class="form-label">Password</label>
-                                                                <input type="password" class="form-control" id="loginpassword" required>
+                                                                <label for="loginpassword"
+                                                                    class="form-label">Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="loginpassword" required>
                                                                 <div class="invalid-feedback">
                                                                     Required Password
                                                                 </div>
@@ -287,54 +319,54 @@
                                                                     Field is Looking Good
                                                                 </div>
                                                             </div>
-                                                            <button type="submit"
-                                                                class="btn btn-primary">Login</button>
+                                                            <button type="submit" class="btn btn-primary">Login</button>
                                                         </form>
                                                         <a href="#" class="forgot-password" id="resetBtn">Reset your
                                                             password?</a>
-        
-        
-                                                            <div class="external-login">
-                                                                <div class="external-login-buttons">
-                                                                    <a href="#" class="btn btn-facebook">
-                                                                        <img src="images/checkout/fb_img.png"
-                                                                            alt="facebook" class="img-fluid">
-                                                                    </a>
-                                                                   
-                                                                    <a href="#" class="btn btn-googlePlus">
-                                                                        <img src="images/checkout/google_plus.png"
-                                                                            alt="facebook" class="img-fluid">
-                                                                    </a>
-                                                                </div>
+
+
+                                                        <div class="external-login">
+                                                            <div class="external-login-buttons">
+                                                                <a href="#" class="btn btn-facebook">
+                                                                    <img src="images/checkout/fb_img.png" alt="facebook"
+                                                                        class="img-fluid">
+                                                                </a>
+
+                                                                <a href="#" class="btn btn-googlePlus">
+                                                                    <img src="images/checkout/google_plus.png"
+                                                                        alt="facebook" class="img-fluid">
+                                                                </a>
                                                             </div>
+                                                        </div>
                                                     </div>
                                                     <div class="card-part clearfix reset-password">
                                                         <form class="needs-validation" novalidate>
                                                             <div class="form-group">
-                                                                <label for="resetemail"
-                                                                    class="form-label">Email</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="resetemail" required>
+                                                                <label for="resetemail" class="form-label">Email</label>
+                                                                <input type="text" class="form-control" id="resetemail"
+                                                                    required>
                                                                 <div class="invalid-feedback">
                                                                     Required Email Address
                                                                 </div>
                                                                 <div class="valid-feedback">
                                                                     Field is Looking Good
                                                                 </div>
-                                                                <p class="text-left">We’ll send you a link to change your password.</p>
+                                                                <p class="text-left">We’ll send you a link to change
+                                                                    your password.</p>
                                                             </div>
-                                                            <button type="submit"
-                                                                class="btn btn-primary">Reset Password</button>
-                                                                <a href="#" class="btn btn-outline" id="backBtn">Back</a>
+                                                            <button type="submit" class="btn btn-primary">Reset
+                                                                Password</button>
+                                                            <a href="#" class="btn btn-outline" id="backBtn">Back</a>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-        
+
                                 </div>
-                                <div class="tab-pane fade" id="create-account-form" role="tabpanel" aria-labelledby="create-account">
+                                <div class="tab-pane fade" id="create-account-form" role="tabpanel"
+                                    aria-labelledby="create-account">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="row">
@@ -345,7 +377,8 @@
                                                                 <div class="col-md-12">
                                                                     <div class="form-group">
                                                                         <label for="fullName">Full Name</label>
-                                                                        <input type="text" class="form-control" id="fullName" required>
+                                                                        <input type="text" class="form-control"
+                                                                            id="fullName" required>
                                                                         <div class="invalid-feedback">
                                                                             Required Full Name
                                                                         </div>
@@ -359,7 +392,8 @@
                                                                 <div class="col-md-12">
                                                                     <div class="form-group">
                                                                         <label for="email">Email</label>
-                                                                        <input type="text" class="form-control" id="email" required>
+                                                                        <input type="text" class="form-control"
+                                                                            id="email" required>
                                                                         <div class="invalid-feedback">
                                                                             Required Email Address
                                                                         </div>
@@ -373,7 +407,8 @@
                                                                 <div class="col-md-12">
                                                                     <div class="form-group">
                                                                         <label for="password">Password</label>
-                                                                        <input type="password" class="form-control" id="password" required>
+                                                                        <input type="password" class="form-control"
+                                                                            id="password" required>
                                                                         <div class="invalid-feedback">
                                                                             Required Password
                                                                         </div>
@@ -386,8 +421,10 @@
                                                             <div class="row">
                                                                 <div class="col-md-12">
                                                                     <div class="form-group">
-                                                                        <label for="confirmPassword">Confirm Password</label>
-                                                                        <input type="password" class="form-control" id="confirmPassword" required>
+                                                                        <label for="confirmPassword">Confirm
+                                                                            Password</label>
+                                                                        <input type="password" class="form-control"
+                                                                            id="confirmPassword" required>
                                                                         <div class="invalid-feedback">
                                                                             Required Confirm Password
                                                                         </div>
@@ -397,25 +434,25 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        
-                                                            <button type="submit"
-                                                                class="btn btn-primary">Create Account</button>
+
+                                                            <button type="submit" class="btn btn-primary">Create
+                                                                Account</button>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-        
+
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-              </div>
+
             </div>
-         </div>
+        </div>
+    </div>
 
     <footer>
         <div id="top" class="footer-top-bg-color">

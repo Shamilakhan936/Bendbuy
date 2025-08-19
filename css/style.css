@@ -22266,6 +22266,12 @@ footer .marketing-collaboration ul li a:hover {
   margin-bottom: 0px;
   font-weight: 600;
 }
+@media (max-width: 575.98px) {
+  .select_category_list .block .brand-grid-cont {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
 .select_category_list .block .col-margin {
   margin-bottom: 30px;
 }
@@ -22300,13 +22306,13 @@ footer .marketing-collaboration ul li a:hover {
   display: none;
 }
 .select_category_list .block .row .card h5, .select_category_list .block .row .card .h5 {
-  color: #0D9488;
+  color: #111827;
   padding-top: 20px;
   padding-bottom: 0px;
   margin-bottom: 0;
 }
 .select_category_list .block .row .card h6, .select_category_list .block .row .card .h6 {
-  color: #0D9488;
+  color: #111827 !important;
 }
 .select_category_list .block .row .card:hover {
   background: #14B8A6;
@@ -22835,25 +22841,38 @@ footer .marketing-collaboration ul li a:hover {
   font-size: 40px;
   color: #111827;
   line-height: 42px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-weight: 600;
 }
 .frequently-question #accordionExample {
-  margin: 0 150px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 991.98px) {
+  .frequently-question #accordionExample {
+    max-width: 960px;
+  }
+}
+@media (max-width: 767.98px) {
+  .frequently-question #accordionExample {
+    max-width: 720px;
+  }
 }
 @media (max-width: 575.98px) {
   .frequently-question #accordionExample {
-    margin: 0 20px;
+    max-width: 100%;
+    padding: 0 15px;
   }
 }
 .frequently-question #accordionExample .accordion-item {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  border-left: 0px;
-  border-right: 0px;
+  border-left: 0;
+  border-right: 0;
 }
 .frequently-question #accordionExample .accordion-item:first-child {
-  border-top: 0px !important;
+  border-top: 0 !important;
 }
 .frequently-question .accordion-button {
   border: none;
@@ -22885,21 +22904,16 @@ footer .marketing-collaboration ul li a:hover {
 }
 @media (max-width: 575.98px) {
   .frequently-question .accordion-button::after {
-    content: "";
+    right: 10px;
   }
 }
 .frequently-question .accordion-button:not(.collapsed) {
   background-color: unset;
   box-shadow: none;
 }
-.frequently-question .accordion-button:not(.collapsed):after {
+.frequently-question .accordion-button:not(.collapsed)::after {
   content: "\f056";
   color: #0D9488;
-}
-@media (max-width: 575.98px) {
-  .frequently-question .accordion-button:not(.collapsed):after {
-    content: "";
-  }
 }
 .frequently-question .accordion-button:not(.collapsed) span {
   background: #14B8A6;
@@ -22931,7 +22945,7 @@ footer .marketing-collaboration ul li a:hover {
 }
 .frequently-question .accordion-body p {
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (max-width: 575.98px) {
   .frequently-question .accordion-body p {
@@ -23210,6 +23224,9 @@ footer .marketing-collaboration ul li a:hover {
   width: 70px;
 }
 
+.checkout .block {
+  margin-top: 0;
+}
 .checkout .block.heading h3, .checkout .block.heading .h3 {
   text-align: center;
   font-size: 40px;
@@ -24092,6 +24109,9 @@ footer .marketing-collaboration ul li a:hover {
   padding-left: 15px;
 }
 
+.dashboard-account .block {
+  padding-top: 0;
+}
 @media (max-width: 991.98px) {
   .dashboard-account .block {
     padding: 0;
@@ -24822,7 +24842,7 @@ footer .marketing-collaboration ul li a:hover {
 }
 .order-success .block.heading h3, .order-success .block.heading .h3 {
   font-size: 40px;
-  color: #0D9488;
+  color: #111827;
   line-height: 42px;
   margin-bottom: 0px;
   font-weight: 600;
@@ -24924,6 +24944,11 @@ footer .marketing-collaboration ul li a:hover {
   }
 }
 @media (max-width: 575.98px) {
+  .order-success .block.zik-zak-line p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
   .order-success .block.zik-zak-line img {
     max-height: 120px;
   }
@@ -25017,10 +25042,21 @@ footer .marketing-collaboration ul li a:hover {
   text-align: center;
 }
 .order-success .block.order-steps-heading h4, .order-success .block.order-steps-heading .h4 {
+  color: #111827;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 0px;
+}
+@media (max-width: 575.98px) {
+  .order-success .block.order-steps-heading h4, .order-success .block.order-steps-heading .h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .order-success .block.order-info p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 575.98px) {
   .order-success .block.order-info {

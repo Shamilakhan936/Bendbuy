@@ -1575,6 +1575,8 @@ footer {
             }
         }
 
+
+
         .col-margin {
             margin-bottom: 30px;
 
@@ -1682,6 +1684,13 @@ footer {
             }
         }
 
+        .brand-grid-cont {
+            @include media-breakpoint-down(sm) {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+            }
+        }
+
         .col-margin {
             margin-bottom: 30px;
 
@@ -1723,14 +1732,14 @@ footer {
                 }
 
                 h5 {
-                    color: $cih-primary-text-color;
+                    color: $natural-color;
                     padding-top: 20px;
                     padding-bottom: 0px;
                     margin-bottom: 0;
                 }
 
                 h6 {
-                    color: $cih-secondary-color;
+                    color: $natural-color !important;
                 }
 
                 &:hover {
@@ -2319,26 +2328,38 @@ footer {
                 font-size: 40px;
                 color: $natural-color;
                 line-height: 42px;
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 font-weight: 600;
             }
         }
     }
 
     #accordionExample {
-        margin: 0 150px;
-         @include media-breakpoint-down(sm) {
-            margin: 0 20px;
-                    }
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        @include media-breakpoint-down(lg) {
+            max-width: 960px;
+        }
+
+        @include media-breakpoint-down(md) {
+            max-width: 720px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            padding: 0 15px;
+        }
 
         .accordion-item {
             border-top: 1px solid rgba(0, 0, 0, 0.125);
             border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-            border-left: 0px;
-            border-right: 0px;
+            border-left: 0;
+            border-right: 0;
 
             &:first-child {
-                border-top: 0px !important;
+                border-top: 0 !important;
             }
         }
     }
@@ -2347,7 +2368,6 @@ footer {
         border: none;
         text-align: start;
         font-weight: 600 !important;
-
         position: relative;
         font-size: 20px;
 
@@ -2362,30 +2382,24 @@ footer {
         &::after {
             background-image: none;
             content: fa-content($fa-var-plus-circle);
-
-            @include media-breakpoint-down(sm) {
-                content: '';
-            }
-
             display: block;
             position: absolute;
             top: 35%;
             right: 4%;
             transform: unset;
             color: $faq-icon-color;
+
+            @include media-breakpoint-down(sm) {
+                right: 10px; // Adjust icon position for small screens
+            }
         }
 
         &:not(.collapsed) {
             background-color: unset;
             box-shadow: none;
 
-            &:after {
+            &::after {
                 content: fa-content($fa-var-minus-circle);
-
-                @include media-breakpoint-down(sm) {
-                    content: '';
-                }
-
                 color: $faq-icon-color;
             }
 
@@ -2420,7 +2434,7 @@ footer {
 
         p {
             text-align: justify;
-            font-size: 14px;
+            font-size: 16px;
 
             @include media-breakpoint-down(sm) {
                 font-size: 14px;
@@ -2786,6 +2800,8 @@ footer {
 // Checkout page
 .checkout {
     .block {
+        margin-top: 0;
+
         &.heading {
             h3 {
                 text-align: center;
@@ -3886,6 +3902,8 @@ footer {
 .dashboard-account {
 
     .block {
+        padding-top: 0;
+
         @include media-breakpoint-down(lg) {
             padding: 0;
         }
@@ -3898,13 +3916,14 @@ footer {
                     align-items: center;
                     justify-content: center;
                 }
-                .dashboard-btn{
+
+                .dashboard-btn {
                     @include media-breakpoint-down(sm) {
                         width: 100%;
+                    }
                 }
             }
         }
-    }
 
         .left-sidebar {
             padding-top: 30px;
@@ -4828,7 +4847,7 @@ footer {
 
             h3 {
                 font-size: 40px;
-                color: $main-background-text-color;
+                color: $natural-color;
                 line-height: 42px;
                 margin-bottom: 0px;
                 font-weight: 600;
@@ -4931,6 +4950,13 @@ footer {
                 background-image: none !important;
             }
 
+            p {
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                }
+            }
+
+
             img {
                 @include media-breakpoint-down(sm) {
                     max-height: 120px;
@@ -5021,6 +5047,8 @@ footer {
             margin-bottom: 0px;
             padding-top: 30px;
 
+
+
             @include media-breakpoint-down(md) {
                 text-align: center;
 
@@ -5033,34 +5061,48 @@ footer {
 
             h3 {
                 text-align: center;
+
             }
 
             h4 {
-
+                color: $natural-color;
                 font-size: 24px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 margin-bottom: 0px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                }
             }
         }
 
 
 
         &.order-info {
+
+            p {
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                }
+            }
+
             @include media-breakpoint-down(sm) {
                 text-align: center;
             }
-            .delivery-btns{
-                 @include media-breakpoint-down(sm) {
+
+            .delivery-btns {
+                @include media-breakpoint-down(sm) {
                     display: flex;
                     flex-direction: column;
 
-                 }
-                 .delivery-btnns{
-                     @include media-breakpoint-down(sm) {
+                }
+
+                .delivery-btnns {
+                    @include media-breakpoint-down(sm) {
                         width: 100%;
-                     }
-                 }
+                    }
+                }
             }
         }
     }

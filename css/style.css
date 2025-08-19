@@ -22188,7 +22188,8 @@ footer .marketing-collaboration ul li a:hover {
 }
 @media (max-width: 575.98px) {
   .brand_list .block .col-margin {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    padding: 0px !important;
   }
 }
 .brand_list .block .row .card {
@@ -22208,7 +22209,7 @@ footer .marketing-collaboration ul li a:hover {
 }
 @media (max-width: 575.98px) {
   .brand_list .block .row .card {
-    margin: 15px;
+    margin: 10px;
   }
 }
 @media (max-width: 575.98px) {

@@ -1578,14 +1578,15 @@ footer {
             margin-bottom: 30px;
 
             @include media-breakpoint-down(sm) {
-                margin-bottom: 15px;
+                margin-bottom: 0px;
+                padding: 0px !important;
             }
         }
 
         .row {
             .card {
                 @include media-breakpoint-down(sm) {
-                    margin: 15px;
+                    margin: 10px;
                 }
 
                 display: flex;

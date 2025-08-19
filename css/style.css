@@ -22294,6 +22294,12 @@ footer .marketing-collaboration ul li a:hover {
   border-radius: 20px !important;
   box-shadow: 0 0 50px 0 rgba(53, 52, 51, 0.15);
 }
+@media (max-width: 575.98px) {
+  .select_category_list .block .row .card {
+    max-height: 220px;
+    min-height: 220px;
+  }
+}
 .select_category_list .block .row .card .image img {
   overflow: hidden !important;
   filter: none !important;
@@ -22564,8 +22570,8 @@ footer .marketing-collaboration ul li a:hover {
 }
 @media (max-width: 767.98px) {
   .model-details .phone-details .custom-radio-big-round .custom-radio .custom-label {
-    padding: 16px 8px;
-    min-width: 98px;
+    padding: 12px 8px;
+    min-width: 90px;
     font-size: 20px;
   }
 }

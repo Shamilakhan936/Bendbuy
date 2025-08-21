@@ -38,8 +38,7 @@
                     <!-- <span class="navbar-toggler-icon"></span> -->
                     <i class="fas fa-bars"></i>
                 </button>
-                <div class="offcanvas offcanvas-end mobile-bg" tabindex="-1" id="offcanvasNavbar"
-                    >
+                <div class="offcanvas offcanvas-end mobile-bg" tabindex="-1" id="offcanvasNavbar">
                     <div class="offcanvas-header">
 
                         <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
@@ -86,7 +85,8 @@
                         <div class="right-section" id="right-header-lg">
                             <ul class="nav d-flex justify-content-end">
                                 <li class="nav-item">
-                                    <a class="nav-link login" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <a class="nav-link login" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -112,8 +112,7 @@
                 <div class="col-md-12">
                     <div class="block heading">
                         <h3>Contact Us</h3>
-                        <p class="mb-0">Today: 10:00 am - 07:00 pm
-                            <br>Open Now</p>
+
                     </div>
                     <div class="block clearfix">
                         <div class="row">
@@ -121,7 +120,8 @@
                                 <div class="block text-center">
                                     <img src="images/contact/ico_map.png" alt="map" class="img-fluid">
                                     <h5>Our Address</h5>
-                                    <p><strong>Buyback script demo 13</strong><br>B/610,  Empire Business Hub, Opposite Shakti Arcade, Science City Road, Sola<br>Ahmedabad Gujarat 380060 us</p>
+                                    <p><strong>Buyback script demo 13</strong><br>B/610, Empire Business Hub, Opposite
+                                        Shakti Arcade, Science City Road, Sola<br>Ahmedabad Gujarat 380060 us</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -137,7 +137,19 @@
                                 <div class="block text-center">
                                     <img src="images/contact/ico_clock.png" alt="clock" class="img-fluid">
                                     <h5>Working Hours</h5>
-                                    <button type="submit" class="btn btn-primary btn-lg" style="box-shadow: none;">Show Hours</button>
+
+                                    <div class="hours-toggle">
+                                        <button type="button" class="btn btn-primary btn-lg toggle-btn"
+                                            style="box-shadow: none;">
+                                            Show Hours
+                                        </button>
+
+                                        <p class="mt-2 toggle-content">
+                                            Today: 10:00 am - 07:00 pm<br>
+                                            Open Now
+                                        </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -146,34 +158,42 @@
                         <div class="row">
                             <div class="col-md-12 mx-auto">
                                 <div class="block">
-                                <h3>Let's Talk about your business</h3>
-                                <p>if you are interested in getting a quote for any of our services, then you can use the below form and we will get back to you as soon as possible.</p>
-                                <form>
-                                    <div class="row my-2">
-                                      <div class="col-md-6">
-                                        <input type="text" class="form-control px-3 py-2" id="name" placeholder="Enter Name">
-                                    </div>
-                                    <div class="col-md-6 mt-3 mt-sm-0">
-                                        <input type="number" class="form-control px-3 py-2" id="phonenum" placeholder="(201) 555-0123">
-                                      </div>
-                                    </div>
-                                    <div class="row my-2">
-                                      <div class="col-md-6">
-                                        <input type="email" class="form-control mt-2 px-3 py-2" id="email" placeholder="Enter email address">
-                                        <input type="password" class="form-control mt-3 px-3 py-2" id="password" placeholder="Enter order number">
-                                        <input type="password" class="form-control mt-3 px-3 py-2" id="password2" placeholder="Enter subject">
-                                      </div>
-                                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-3 mt-sm-2">
-                                        <textarea class="form-control px-3 py-2" placeholder="Enter Message" id="floatingTextarea2" style="height: 156px; resize:none;"></textarea>
-                                      </div>
-                                    </div>
-                      
-                                    <div class="row my-2">
-                                      <div class="col-12">
-                                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                                      </div>
-                                    </div>
-                                  </form>
+                                    <h3>Let's Talk about your business</h3>
+                                    <p>if you are interested in getting a quote for any of our services, then you can
+                                        use the below form and we will get back to you as soon as possible.</p>
+                                    <form>
+                                        <div class="row my-2">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control px-3 py-2" id="name"
+                                                    placeholder="Enter Name">
+                                            </div>
+                                            <div class="col-md-6 mt-3 mt-sm-0">
+                                                <input type="number" class="form-control px-3 py-2" id="phonenum"
+                                                    placeholder="(201) 555-0123">
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-md-6">
+                                                <input type="email" class="form-control mt-2 px-3 py-2" id="email"
+                                                    placeholder="Enter email address">
+                                                <input type="password" class="form-control mt-3 px-3 py-2" id="password"
+                                                    placeholder="Enter order number">
+                                                <input type="password" class="form-control mt-3 px-3 py-2"
+                                                    id="password2" placeholder="Enter subject">
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-3 mt-sm-2">
+                                                <textarea class="form-control px-3 py-2" placeholder="Enter Message"
+                                                    id="floatingTextarea2"
+                                                    style="height: 156px; resize:none;"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="row my-2">
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -183,183 +203,194 @@
         </div>
     </section>
 
-     <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close">
-            <img src="images/close.png" alt="close-png" class="img-fluid">
-          </button>
-        </div>
-        <div class="modal-body">
-            <div class="card border-0">
-                <div class="card-body ps-0 pt-0 pe-0">
-                    <div class="nav nav-tabs border-0" id="myTab" role="tablist">
-                        <a href="#" class=" nav-item active rounded-pill" id="login" data-bs-toggle="tab" data-bs-target="#login-form" type="button" role="tab" aria-controls="login-form" aria-selected="true">Sign In</a>
-                        <a href="#" class="nav-item rounded-pill" id="create-account" data-bs-toggle="tab" data-bs-target="#create-account-form" type="button" role="tab" aria-controls="create-account-form" aria-selected="false">Registration</a>
-                    </div>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="login-form" role="tabpanel" aria-labelledby="login">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-12 col-md-12 col-lg-12 mb-4 mb-sm-0 mx-auto">
-                                            <div class="card-part clearfix user-login">
-                                                <form class="needs-validation" novalidate>
-                                                    <div class="form-group">
-                                                        <label for="loginemail"
-                                                            class="form-label">Email</label>
-                                                        <input type="text" class="form-control"
-                                                            id="loginemail" required>
-                                                        <div class="invalid-feedback">
-                                                            Required Email Address
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Field is Looking Good
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label for="loginpassword" class="form-label">Password</label>
-                                                        <input type="password" class="form-control" id="loginpassword" required>
-                                                        <div class="invalid-feedback">
-                                                            Required Password
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Field is Looking Good
-                                                        </div>
-                                                    </div>
-                                                    <button type="submit"
-                                                        class="btn btn-primary">Login</button>
-                                                </form>
-                                                <a href="#" class="forgot-password" id="resetBtn">Reset your
-                                                    password?</a>
-
-
-                                                    <div class="external-login">
-                                                        <div class="external-login-buttons">
-                                                            <a href="#" class="btn btn-facebook">
-                                                                <img src="images/checkout/fb_img.png"
-                                                                    alt="facebook" class="img-fluid">
-                                                            </a>
-                                                           
-                                                            <a href="#" class="btn btn-googlePlus">
-                                                                <img src="images/checkout/google_plus.png"
-                                                                    alt="facebook" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <div class="card-part clearfix reset-password">
-                                                <form class="needs-validation" novalidate>
-                                                    <div class="form-group">
-                                                        <label for="resetemail"
-                                                            class="form-label">Email</label>
-                                                        <input type="text" class="form-control"
-                                                            id="resetemail" required>
-                                                        <div class="invalid-feedback">
-                                                            Required Email Address
-                                                        </div>
-                                                        <div class="valid-feedback">
-                                                            Field is Looking Good
-                                                        </div>
-                                                        <p class="text-left">We’ll send you a link to change your password.</p>
-                                                    </div>
-                                                    <button type="submit"
-                                                        class="btn btn-primary">Reset Password</button>
-                                                        <a href="#" class="btn btn-outline" id="backBtn">Back</a>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/close.png" alt="close-png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card border-0">
+                        <div class="card-body ps-0 pt-0 pe-0">
+                            <div class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                <a href="#" class=" nav-item active rounded-pill" id="login" data-bs-toggle="tab"
+                                    data-bs-target="#login-form" type="button" role="tab" aria-controls="login-form"
+                                    aria-selected="true">Sign In</a>
+                                <a href="#" class="nav-item rounded-pill" id="create-account" data-bs-toggle="tab"
+                                    data-bs-target="#create-account-form" type="button" role="tab"
+                                    aria-controls="create-account-form" aria-selected="false">Registration</a>
                             </div>
-
-                        </div>
-                        <div class="tab-pane fade" id="create-account-form" role="tabpanel" aria-labelledby="create-account">
-
-
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-12 mb-4 mb-sm-0 mx-auto">
-                                            <div class="card-part clearfix">
-                                                <form class="needs-validation" novalidate>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="login-form" role="tabpanel"
+                                    aria-labelledby="login">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12 col-lg-12 mb-4 mb-sm-0 mx-auto">
+                                                    <div class="card-part clearfix user-login">
+                                                        <form class="needs-validation" novalidate>
                                                             <div class="form-group">
-                                                                <label for="fullName">Full Name</label>
-                                                                <input type="text" class="form-control" id="fullName" required>
-                                                                <div class="invalid-feedback">
-                                                                    Required Full Name
-                                                                </div>
-                                                                <div class="valid-feedback">
-                                                                    Looks Good
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-group">
-                                                                <label for="email">Email</label>
-                                                                <input type="text" class="form-control" id="email" required>
+                                                                <label for="loginemail" class="form-label">Email</label>
+                                                                <input type="text" class="form-control" id="loginemail"
+                                                                    required>
                                                                 <div class="invalid-feedback">
                                                                     Required Email Address
                                                                 </div>
                                                                 <div class="valid-feedback">
-                                                                    Looks Good
+                                                                    Field is Looking Good
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
+
                                                             <div class="form-group">
-                                                                <label for="password">Password</label>
-                                                                <input type="password" class="form-control" id="password" required>
+                                                                <label for="loginpassword"
+                                                                    class="form-label">Password</label>
+                                                                <input type="password" class="form-control"
+                                                                    id="loginpassword" required>
                                                                 <div class="invalid-feedback">
                                                                     Required Password
                                                                 </div>
                                                                 <div class="valid-feedback">
-                                                                    Looks Good
+                                                                    Field is Looking Good
                                                                 </div>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary">Login</button>
+                                                        </form>
+                                                        <a href="#" class="forgot-password" id="resetBtn">Reset your
+                                                            password?</a>
+
+
+                                                        <div class="external-login">
+                                                            <div class="external-login-buttons">
+                                                                <a href="#" class="btn btn-facebook">
+                                                                    <img src="images/checkout/fb_img.png" alt="facebook"
+                                                                        class="img-fluid">
+                                                                </a>
+
+                                                                <a href="#" class="btn btn-googlePlus">
+                                                                    <img src="images/checkout/google_plus.png"
+                                                                        alt="facebook" class="img-fluid">
+                                                                </a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
+                                                    <div class="card-part clearfix reset-password">
+                                                        <form class="needs-validation" novalidate>
                                                             <div class="form-group">
-                                                                <label for="confirmPassword">Confirm Password</label>
-                                                                <input type="password" class="form-control" id="confirmPassword" required>
+                                                                <label for="resetemail" class="form-label">Email</label>
+                                                                <input type="text" class="form-control" id="resetemail"
+                                                                    required>
                                                                 <div class="invalid-feedback">
-                                                                    Required Confirm Password
+                                                                    Required Email Address
                                                                 </div>
                                                                 <div class="valid-feedback">
-                                                                    Looks Good
+                                                                    Field is Looking Good
                                                                 </div>
+                                                                <p class="text-left">We’ll send you a link to change
+                                                                    your password.</p>
                                                             </div>
-                                                        </div>
+                                                            <button type="submit" class="btn btn-primary">Reset
+                                                                Password</button>
+                                                            <a href="#" class="btn btn-outline" id="backBtn">Back</a>
+                                                        </form>
                                                     </div>
-                                                
-                                                    <button type="submit"
-                                                        class="btn btn-primary">Create Account</button>
-                                                </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="create-account-form" role="tabpanel"
+                                    aria-labelledby="create-account">
+
+
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-12 mb-4 mb-sm-0 mx-auto">
+                                                    <div class="card-part clearfix">
+                                                        <form class="needs-validation" novalidate>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="fullName">Full Name</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="fullName" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Required Full Name
+                                                                        </div>
+                                                                        <div class="valid-feedback">
+                                                                            Looks Good
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="email">Email</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="email" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Required Email Address
+                                                                        </div>
+                                                                        <div class="valid-feedback">
+                                                                            Looks Good
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="password">Password</label>
+                                                                        <input type="password" class="form-control"
+                                                                            id="password" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Required Password
+                                                                        </div>
+                                                                        <div class="valid-feedback">
+                                                                            Looks Good
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label for="confirmPassword">Confirm
+                                                                            Password</label>
+                                                                        <input type="password" class="form-control"
+                                                                            id="confirmPassword" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Required Confirm Password
+                                                                        </div>
+                                                                        <div class="valid-feedback">
+                                                                            Looks Good
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <button type="submit" class="btn btn-primary">Create
+                                                                Account</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </div>
     </div>
- </div>
 
     <footer>
         <div id="top" class="footer-top-bg-color">
@@ -418,7 +449,7 @@
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">About Us</a></li>
-                                    <li><a href="#">About Us</a></li> --> 
+                                    <li><a href="#">About Us</a></li> -->
                                 </ul>
                             </div>
                         </div>

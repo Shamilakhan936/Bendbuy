@@ -24796,10 +24796,22 @@ footer .marketing-collaboration ul li a:hover {
   margin-bottom: 10px;
   border-bottom: 1px solid #aadff0;
 }
+@media (max-width: 575.98px) {
+  .dashboard-account .block.tracking-status h3, .dashboard-account .block.tracking-status .h3 {
+    font-size: 18px;
+  }
+}
 .dashboard-account .block.tracking-status table tbody,
 .dashboard-account .block.tracking-status table tr,
 .dashboard-account .block.tracking-status table td {
   border: none;
+}
+@media (max-width: 575.98px) {
+  .dashboard-account .block.tracking-status table tbody,
+  .dashboard-account .block.tracking-status table tr,
+  .dashboard-account .block.tracking-status table td {
+    font-size: 14px;
+  }
 }
 .dashboard-account .block .btn-outline-dark.color-primary {
   color: #0D9488;

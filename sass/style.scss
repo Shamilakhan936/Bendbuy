@@ -4163,12 +4163,14 @@ footer {
                 display: flex;
                 align-items: center;
                 justify-content: end;
+
                 .custom-select-wrapper {
                     position: relative;
-                    width: 120px; 
-                     @include media-breakpoint-down(sm) {
-                                width: 80px;
-                            }
+                    width: 120px;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 80px;
+                    }
 
                     .custom-select {
                         width: 100%;
@@ -4768,6 +4770,10 @@ footer {
                 padding-bottom: 15px;
                 margin-bottom: 10px;
                 border-bottom: 1px solid #aadff0;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                }
             }
 
             table {
@@ -4776,6 +4782,10 @@ footer {
                 tr,
                 td {
                     border: none;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 14px;
+                    }
                 }
             }
         }

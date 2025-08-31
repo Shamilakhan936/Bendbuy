@@ -21043,19 +21043,27 @@ header {
 }
 header .navbar-brand {
   margin-right: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header .navbar-brand img {
-  object-fit: contain;
+header .navbar-brand h2, header .navbar-brand .h2 {
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
 }
 @media (max-width: 767.98px) {
-  header .navbar-brand img {
-    width: 120px;
+  header .navbar-brand h2, header .navbar-brand .h2 {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 575.98px) {
-  header .navbar-brand img {
+  header .navbar-brand h2, header .navbar-brand .h2 {
+    font-size: 1.2rem;
     padding: 0;
-    height: 70px;
+    height: auto;
   }
 }
 header .navbar-toggler i {
@@ -22540,7 +22548,7 @@ footer .marketing-collaboration ul li a:hover {
 .model-details .phone-details .custom-radio-big-round .custom-radio {
   display: -webkit-inline-box;
   display: inline-flex;
-  margin-right: 1rem;
+  margin-right: 2rem;
   margin-bottom: 8px;
 }
 .model-details .phone-details .custom-radio-big-round .custom-radio .custom-input {
@@ -22559,11 +22567,11 @@ footer .marketing-collaboration ul li a:hover {
 .model-details .phone-details .custom-radio-big-round .custom-radio .custom-label {
   position: relative;
   font-family: "Metropolis Semi-Bold";
-  padding: 30px 8px;
-  min-width: 150px;
+  padding: 20px 8px;
+  min-width: 100px;
   max-width: 200px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 800;
   border-radius: 4px;
   border: 2px solid #96a7ac;
@@ -22674,7 +22682,7 @@ footer .marketing-collaboration ul li a:hover {
 .model-details .phone-details .custom-radio-small-pill .custom-radio {
   display: -webkit-inline-box;
   display: inline-flex;
-  margin-right: 1rem;
+  margin-right: 2rem;
   margin-bottom: 8px;
 }
 .model-details .phone-details .custom-radio-small-pill .custom-radio .custom-input {
@@ -22697,7 +22705,7 @@ footer .marketing-collaboration ul li a:hover {
   min-width: 120px;
   max-width: 200px;
   text-align: center;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
   border-radius: 4px;
   border: 2px solid #ececec;
@@ -22758,11 +22766,11 @@ footer .marketing-collaboration ul li a:hover {
 }
 .model-details .model-condition .custom-radio-large-pill .custom-radio .custom-label {
   font-family: "Metropolis Semi-Bold";
-  padding: 23px 8px;
-  min-width: 170px;
+  padding: 18px 8px;
+  min-width: 120px;
   max-width: 200px;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   border-radius: 4px;
   border: 2px solid #ececec;
